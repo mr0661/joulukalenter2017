@@ -35,6 +35,9 @@ getResult1 x = getResultX x prepareString1
 getResult2 x = getResultX x prepareString2
 
 -- Use getResult funtions or replace input with your own --
-input = "This could be your input"
-result1 = getResult1 input
-result2 = getResult2 input
+main = do
+    y <- readFile "input.txt"
+    result1 <- return $ getResult1 y
+    result2 <- return $ getResult2 y
+    print result1
+    print result2
