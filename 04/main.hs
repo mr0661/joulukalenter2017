@@ -1,9 +1,6 @@
 import Data.List
 import Data.List.Split
 
---input = readFile "input.txt"
---exampleInput = [["aa", "bb","cc"],["ab", "ba","cc"]]
---a = ["ab", "ba","cc"]
 parse x = map words ( splitOn "\n" x)
 
 isValid1 [] = error "You forgot to put your input"
